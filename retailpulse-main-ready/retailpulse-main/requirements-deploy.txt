@@ -1,0 +1,15 @@
+# Lean requirements for deploying the Streamlit app only.
+# The full requirements.txt (torch, prophet, xgboost, mlflow, evidently,
+# great-expectations) is for the notebooks/training pipeline and is not
+# needed to run app/main.py — none of those packages are imported there.
+#
+# On Streamlit Community Cloud: rename/copy this file to requirements.txt
+# at the repo root (or point Streamlit's "Advanced settings" to this path)
+# before deploying.
+
+streamlit
+pandas
+numpy
+plotly
+scikit-learn
+reportlab
